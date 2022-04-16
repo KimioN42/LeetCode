@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 class Solution {
     public int[][] generateMatrix(int n) {
         var matrix = new int[n][n];
@@ -27,8 +25,8 @@ class Solution {
         return matrix;
     }
 
-    public static void main(String[] args) {
-        Solution s = new Solution();
-        System.out.println(s.generateMatrix(3));
-    }
+    // public static void main(String[] args) {
+    // Solution s = new Solution();
+    // System.out.println(s.generateMatrix(3));
+    // }
 }

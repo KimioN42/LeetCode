@@ -14,20 +14,20 @@
  * }
  */
 class Solution {
-    public TreeNode convertBST(TreeNode root) {
-        dfs(root, 0);
-        return root;
-    }
+    // public TreeNode convertBST(TreeNode root) {
+    // dfs(root, 0);
+    // return root;
+    // }
 
-    // gets sum of right subtree using depth first search
-    private int dfs(TreeNode root, int sum) {
-        if (root == null)
-            return sum;
-        root.val += dfs(root.right, sum);
-        return dfs(root.left, root.val);
-    }
+    // // gets sum of right subtree using depth first search
+    // private int dfs(TreeNode root, int sum) {
+    // if (root == null)
+    // return sum;
+    // root.val += dfs(root.right, sum);
+    // return dfs(root.left, root.val);
+    // }
 
-    public static void main(String[] args) {
-        System.out.println("Hello world");
-    }
+    // public static void main(String[] args) {
+    // System.out.println("Hello world");
+    // }
 }
